@@ -1,5 +1,5 @@
 ---
-title: "idOS Network 2025: The Only Chain-Agnostic Identity Layer Actually Shipping — And How to Farm Its Confirmed Airdrop Right Now"
+title: "idOS Network 2025: The Only Chain-Agnostic Identity Layer Actually Shipping"
 description: "idOS is the decentralized, zero-knowledge identity primitive that finally works across EVM, Solana, NEAR, Starknet, Cosmos, and more. 1.2M+ profiles, 450k+ verified credentials, and a massive airdrop farming opportunity via Wallchain leaderboard."
 date: 2025-11-25
 image: "/images/posts/idos.jpg"

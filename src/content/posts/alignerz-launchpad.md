@@ -1,5 +1,5 @@
 ---
-title: "AlignerZ Launchpad: The First Truly Aligned Launchpad — Why This Changes Everything in Web3"
+title: "AlignerZ Launchpad: The First Truly Aligned Launchpad"
 description: "Traditional launchpads are broken: bots, instant dumps, zero alignment. AlignerZ fixes it with IWO + TVS and is giving away 3.84% of supply via the ongoing Wallchain Epoch 1 airdrop. Full breakdown + how to join the airdrop with max rewards."
 date: 2025-11-26
 image: "/images/posts/alignerz.jpg"

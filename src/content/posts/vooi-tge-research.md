@@ -1,5 +1,5 @@
 ---
-title: "$VOOI TGE in Days: The Only Perps Aggregator With Real Volume & 26× Oversubscribed Sale — Full Research + Playbook"
+title: "$VOOI TGE in Days: Full Research + Playbook"
 description: "26× oversubscribed community round, $20B+ cumulative volume, $200-400M daily, 100% unlock at TGE, and a points system that actually rewards real traders. Here’s why $VOOI at $112.5M FDV is the cleanest utility launch of Q4 2025 — plus exact steps to farm the airdrop before it’s gone."
 date: 2025-11-25
 image: "/images/posts/vooi.jpg"
@@ -11,7 +11,7 @@ categories: ["defi", "research"]
 draft: false
 ---
 
-# $VOOI TGE in Days: The Only Perps Aggregator With Real Volume & 26× Oversubscribed Sale — Full Research + Playbook
+# $VOOI TGE in Days:  Full Research + Playbook
 
 The $VOOI token generation event is literally days away (most likely December 1st, 2025), and the numbers are stupid.
 

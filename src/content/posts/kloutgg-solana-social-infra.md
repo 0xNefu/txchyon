@@ -1,5 +1,5 @@
 ---
-title: "KloutGG 2025: The On-Chain Social Graph That's Redefining Solana Reputation — And Why Your Klout Score Will Matter More Than Followers"
+title: "KloutGG 2025: The On-Chain Social Graph That's Redefining Solana Reputation"
 description: "KloutGG is turning Solana on-chain activity into verifiable social capital with 420k+ verified wallets. From Backpack whitelists to Marginfi borrow limits, here's how Klout is becoming the reputation layer Solana needs — and how to boost your score."
 date: 2025-11-25
 image: "/images/posts/kloutgg.jpg"
@@ -11,7 +11,7 @@ categories: ["solana"]
 draft: false
 ---
 
-# KloutGG 2025: The On-Chain Social Graph That's Redefining Solana Reputation — And Why Your Klout Score Will Matter More Than Followers
+# KloutGG 2025: The On-Chain Social Graph That's Redefining Solana Reputation
 
 Solana's on-chain economy is maturing fast, but one massive gap remains: **verifiable social capital**.
 
