@@ -1,14 +1,13 @@
 ---
 import menu from "@/config/menu.json";
 import { IoSearch } from "react-icons/io5";
-import CryptoTicker from "@/components/CryptoTicker.astro";
 
 const { main } = menu as { main: { name: string; url: string }[] };
 ---
 
-<header class="py-6">
+<header class="py-6 border-b border-gray-200 dark:border-gray-800">
   <div class="container mx-auto px-6 flex items-center justify-between">
-    <!-- TXCHYON LOGO + TEXT – TOP LEFT -->
+    <!-- LOGO + NAME -->
     <div class="flex items-center space-x-3">
       <a href="/" class="flex items-center space-x-3">
         <img
@@ -22,7 +21,7 @@ const { main } = menu as { main: { name: string; url: string }[] };
       </a>
     </div>
 
-    <!-- Desktop Links – PURE BLACK in light, white in dark -->
+    <!-- NAV LINKS -->
     <nav class="hidden md:flex items-center space-x-10">
       {main.map((item) => (
         <a
@@ -34,7 +33,7 @@ const { main } = menu as { main: { name: string; url: string }[] };
       ))}
     </nav>
 
-    <!-- Search + CLEAN TOGGLE -->
+    <!-- SEARCH + THEME TOGGLE -->
     <div class="flex items-center gap-8">
       <a href="/search" class="text-black data-[theme=dark]:text-white hover:text-blue-600 transition">
         <IoSearch class="w-6 h-6" />
@@ -53,14 +52,9 @@ const { main } = menu as { main: { name: string; url: string }[] };
       </button>
     </div>
   </div>
-
-  <!-- TICKER – BORDER 100% GONE -->
-  <div class="-mb-px">
-    <CryptoTicker client:load />
-  </div>
 </header>
 
-<!-- DARK MODE SCRIPT -->
+<!-- DARK MODE SCRIPT (unchanged) -->
 <script is:global>
   document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("theme-toggle");
