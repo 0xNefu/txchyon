@@ -14,6 +14,11 @@
       "name": "YouTube",
       "icon": "FaYoutube",
       "link": "https://www.youtube.com/@txchyon"
+    },
+    {
+      "name": "Telegram",
+      "icon": "FaTelegram",
+      "link": "https://t.me/txchyon"
     }
   ]
 }
