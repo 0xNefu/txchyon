@@ -33,7 +33,7 @@ Let’s lock it down.
 ## My Exact 5-Minute NordVPN → Hyperliquid Setup
 
 ### 1. Grab the Deal (60 seconds)
-→ **[Get NordVPN with the current promo (3–4 months free)](https://nordvpn.com/?r=yourcode)**  
+→ **[Get NordVPN with the current promo (3–4 months free)](https://refer-nordvpn.com/emkOgYiYuRS)**  
 *(Disclosure: affiliate link — using it keeps the blog free and gets you the lowest price)*
 
 Take the **2-year plan** — right now it’s usually ~$3.09–$3.99/month + 3–4 months free.
@@ -62,7 +62,7 @@ These are my personally tested servers (Nov 2025) — Hyperliquid runs on Arbitr
 
 ### 5. Test & Start Trading
 1. Visit [whatismyipaddress.com](https://whatismyipaddress.com) — should show your VPN server  
-2. Open [app.hyperliquid.xyz](https://app.hyperliquid.xyz) → connect MetaMask → place a tiny test position  
+2. Open [app.hyperliquid.xyz](https://app.hyperliquid.xyz/join/DOMHYPE) → connect MetaMask → place a tiny test position  
 3. Watch the latency in the Hyperliquid UI — should stay under 50 ms even during chaos
 
 You’re now completely invisible and untouchable.

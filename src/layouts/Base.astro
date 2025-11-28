@@ -12,11 +12,7 @@ import {
 } from "@digi4care/astro-google-tagmanager";
 import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
-
-// ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
-// NEW: Import the SEO component (this is the only new import)
 import SEO from "@/components/SEO.astro";
-// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 
 const pf = theme.fonts.font_family.primary;
 let fontPrimary;
@@ -37,7 +33,6 @@ export interface Props {
 
 const { title, meta_title, description, image, noindex, canonical } = Astro.props;
 
-// Compute exactly the same values you already had
 const finalTitle = plainify(meta_title ?? title ?? config.site.title);
 const finalDescription = plainify(description ?? config.metadata.meta_description);
 const finalImage = image
@@ -48,12 +43,10 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- google tag manager -->
     {config.google_tag_manager.enable && (
       <GoogleTagmanager id={config.google_tag_manager.gtm_id} />
     )}
 
-    <!-- favicon & theme meta (unchanged) -->
     <link rel="shortcut icon" href={config.site.favicon} />
     <meta name="theme-name" content="bookworm-light-astro" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -62,7 +55,6 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <!-- google font (unchanged) -->
     <AstroFont
       config={[
         {
@@ -77,13 +69,8 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
       ]}
     />
 
-    <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
-    <!-- ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
-         THIS ONE LINE REPLACES YOUR ENTIRE 100-LINE META BLOCK
-         (same values, cleaner output, no duplicates, future-proof)
-    -->
     <SEO
       title={finalTitle}
       description={finalDescription}
@@ -91,7 +78,10 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
       canonical={finalCanonical}
       noindex={!!noindex}
     />
-    <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ -->
+
+    <!-- RSS + JSON Feed discovery (this is where 99 % of pro sites put them) -->
+    <link rel="alternate" type="application/rss+xml" title="Txchyon RSS" href="/rss.xml" />
+    <link rel="alternate" type="application/feed+json" title="Txchyon JSON Feed" href="/feed.json" />
 
     <ClientRouter />
     <meta name="author" content={config.metadata.meta_author} />

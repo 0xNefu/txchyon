@@ -5,10 +5,9 @@ import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
 ---
-
 <footer class="section bg-dark">
   <div class="container text-center">
-    {/* footer menu
+    {/* footer menu */}
     <ul class="mb-8 space-x-4">
       {
         menu.footer.map((item) => (
@@ -22,7 +21,6 @@ import { markdownify } from "@/lib/utils/textConverter";
           </li>
         ))
       }
-      {/* ← NEW LINK ADDED HERE (same style as the others) */}
       <li class="inline-block">
         <a
           href="/tools"
@@ -35,6 +33,13 @@ import { markdownify } from "@/lib/utils/textConverter";
 
     {/* social icons */}
     <Social source={social.main} className="social-icons mb-8" />
+
+    {/* NEW: Hidden IndieWeb verification links (rel="me") */}
+    <div class="hidden">
+      <a rel="me" href="https://github.com/0xnefu">GitHub</a>
+      <a rel="me" href="https://twitter.com/txchyon">Twitter</a>
+      <a rel="me" href="https://x.com/txchyon">X.com</a>
+    </div>
 
     {/* copyright */}
     <p set:html={markdownify(config.params.copyright)} class="text-white/75" />

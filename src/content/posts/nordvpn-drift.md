@@ -33,10 +33,10 @@ Let’s lock it down.
 ## My Exact 5-Minute NordVPN → Drift Setup
 
 ### 1. Grab the Deal (60 seconds)
-→ **[Get NordVPN with the current promo (3–4 months free)](https://nordvpn.com/?r=yourcode)**  
+→ **[Get NordVPN with the current promo (3–4 months free)](https://refer-nordvpn.com/emkOgYiYuRS)**  
 *(Disclosure: affiliate link — using it keeps the blog free and gets you the lowest price)*
 
-Take the **2-year plan** — right now it’s usually ~$3.09–$3.99/month + 3–4 months free.
+Take the **2-year plan** — righhttps://refer-nordvpn.com/emkOgYiYuRSt now it’s usually ~$3.09–$3.99/month + 3–4 months free.
 
 ### 2. Install the App
 Download straight from your Nord account after payment — works on Windows, Mac, iOS, Android, and browser extensions.
@@ -62,7 +62,7 @@ These are my personally tested servers (Nov 2025):
 
 ### 5. Test & Start Trading
 1. Visit [whatismyipaddress.com](https://whatismyipaddress.com) — should show your VPN server, not your real IP  
-2. Open [app.drift.trade](https://app.drift.trade) → connect Phantom → place a tiny test position  
+2. Open [app.drift.trade](https://app.drift.trade/ref/nefutrades) → connect Phantom → place a tiny test position  
 3. Watch the latency in the bottom-right of Drift — should stay under 60 ms even during pumps
 
 You’re now completely shielded.
