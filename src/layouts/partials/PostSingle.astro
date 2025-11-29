@@ -12,24 +12,25 @@ import { BiCalendarEdit, BiCategoryAlt } from "react-icons/bi";
 const allAuthors = await getSinglePage("authors");
 const posts = await getSinglePage("posts");
 const { post } = Astro.props;
+
 const similarPosts = similerItems(post, posts, post.slug);
 const { Content } = await render(post);
 const { title, description, authors, categories, image, date, tags } = post.data;
 
-// OPEN GRAPH & TWITTER CARDS (THIS IS THE FIX)
+// Open Graph & SEO
 const siteUrl = "https://txchyon.com";
 const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
 ---
 
-<!-- ADD THESE META TAGS TO <head> -->
+<!-- Meta tags -->
 <head>
   <meta charset="utf-8" />
   <title>{title} | Txchyon</title>
   <meta name="description" content={description} />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -37,7 +38,7 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:site_name" content="Txchyon" />
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@txchyon" />
   <meta name="twitter:creator" content="@txchyon" />
@@ -45,22 +46,23 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage} />
 
-  <!-- Optional but recommended -->
   <link rel="canonical" href={canonicalUrl} />
 </head>
 
 <section class="section">
   <div class="container">
     <article class="row justify-center">
+      <!-- Title + meta info -->
       <div class="md:col-10 text-center">
         <h1 set:html={markdownify(title)} class="h2" />
         <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
+          <!-- Author -->
           <li class="mx-3">
             {
               allAuthors
                 .filter((author) =>
                   authors
-                    .map((author: string) => slugify(author))
+                    .map((a: string) => slugify(a))
                     .includes(slugify(author.data.title))
                 )
                 .map((author) => (
@@ -74,7 +76,7 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
                         alt={author.data.title}
                         height={50}
                         width={50}
-                        class="mr-2 h-6 w-6 rounded-full"
+                        class="mr-2 h-6 w-6 rounded-full object-cover"
                       />
                     )}
                     <span>{author.data.title}</span>
@@ -82,62 +84,111 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
                 ))
             }
           </li>
+
+          <!-- Date -->
           <li class="mx-3 flex items-center flex-wrap font-medium">
             <BiCalendarEdit className="mr-1 h-5 w-5 text-gray-600" />
             {dateFormat(date)}
           </li>
+
+          <!-- Categories -->
           <li class="mx-3 flex items-center flex-wrap">
             <BiCategoryAlt className="mr-1 h-[18px] w-[18px] text-gray-600" />
             <ul>
-              {
-                categories.map((category: string, i: number) => (
-                  <li class="inline-block">
-                    <a
-                      href={`/categories/${slugify(category)}`}
-                      class="mr-2 hover:text-primary font-medium"
-                    >
-                      {humanize(category)}
-                      {i !== post.data.categories.length - 1 && ","}
-                    </a>
-                  </li>
-                ))
-              }
+              {categories.map((category: string, i: number) => (
+                <li class="inline-block">
+                  <a
+                    href={`/categories/${slugify(category)}`}
+                    class="mr-2 hover:text-primary font-medium"
+                  >
+                    {humanize(category)}{i !== categories.length - 1 && ","}
+                  </a>
+                </li>
+              ))}
             </ul>
           </li>
         </ul>
       </div>
-      <div class="col-12 mt-8 mb-2">
-        {
-          image && (
-            <Image
-              src={image}
-              height={500}
-              width={1000}
-              alt={title}
-              class="rounded-lg"
-            />
-          )
-        }
-      </div>
+
+      <!-- Featured image -->
+      {image && (
+        <div class="col-12 mt-8 mb-2">
+          <Image
+            src={image}
+            height={500}
+            width={1000}
+            alt={title}
+            class="rounded-lg w-full"
+          />
+        </div>
+      )}
+
+      <!-- Main content -->
       <div class="md:col-10">
         <div class="content mb-16 text-left">
           <Content />
         </div>
+
+        <!-- BEEHIIV SUBSCRIBE FORM – FULLY MOBILE RESPONSIVE -->
+        <div class="my-16 md:my-20 px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-8 lg:p-10 text-center shadow-lg">
+            
+            <h3 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight">
+              Get Weekly DeFi Alpha in Your Inbox
+            </h3>
+            
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed">
+              Join 56k+ traders getting my private watchlist every Thursday
+            </p>
+
+            <!-- Beehiiv script (loads once) -->
+            <script async data-id="beehiiv-embed" src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+
+            <!-- Responsive iframe with auto-height -->
+            <div class="w-full max-w-2xl mx-auto">
+              <iframe
+                src="https://subscribe-forms.beehiiv.com/cc63cad9-7786-4f32-badd-628ad1226266"
+                class="beehiiv-embed w-full"
+                data-test-id="beehiiv-embed"
+                frameborder="0"
+                scrolling="no"
+                style="
+                  height: 420px;
+                  border-radius: 12px;
+                  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                  min-height: 400px;
+                "
+                onload="this.style.height=(this.contentWindow.document.body.scrollHeight + 30) + 'px'"
+              ></iframe>
+            </div>
+
+            <!-- Fallback if JS is disabled -->
+            <noscript>
+              <p class="text-sm text-gray-500 mt-4">
+                <a href="https://www.beehiiv.com/?via=txchyon" target="_blank" class="underline hover:text-primary">
+                  Subscribe to the newsletter
+                </a>
+              </p>
+            </noscript>
+          </div>
+        </div>
+        <!-- END OF SUBSCRIBE FORM -->
+
+        <!-- Tags + Share -->
         <div class="flex flex-wrap items-center justify-between">
           <ul class="mr-4 mb-4 space-x-3">
-            {
-              tags.map((tag: string) => (
-                <li class="inline-block">
-                  <a
-                    href={`/tags/${slugify(tag)}`}
-                    class="block rounded-lg bg-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
-                  >
-                    #{humanize(tag)}
-                  </a>
-                </li>
-              ))
-            }
+            {tags?.map((tag: string) => (
+              <li class="inline-block">
+                <a
+                  href={`/tags/${slugify(tag)}`}
+                  class="block rounded-lg bg-light px-4 py-2 font-semibold text-dark text-sm hover:text-primary transition duration-300"
+                >
+                  #{humanize(tag)}
+                </a>
+              </li>
+            ))}
           </ul>
+
           <Share
             className="social-share mb-4"
             title={title}
@@ -150,14 +201,12 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
   </div>
 </section>
 
-<!-- similar posts -->
-{
-  similarPosts.length > 0 && (
-    <section class="section pt-0">
-      <div class="container">
-        <h2 class="mb-8 text-center h3">Similar Posts</h2>
-        <SimilarPosts posts={similarPosts.slice(0, 3)} />
-      </div>
-    </section>
-  )
-}
+<!-- Similar posts -->
+{similarPosts.length > 0 && (
+  <section class="section pt-0">
+    <div class="container">
+      <h2 class="mb-8 text-center h3">Similar Posts</h2>
+      <SimilarPosts posts={similarPosts.slice(0, 3)} />
+    </div>
+  </section>
+)}

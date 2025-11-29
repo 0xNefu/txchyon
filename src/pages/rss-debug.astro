@@ -1,0 +1,73 @@
+---
+// src/pages/rss-debug.astro
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+
+const brokenPosts = posts
+  .filter(post => {
+    const desc = (post.data.description || "").toString().trim();
+    const excerpt = (post.data.excerpt || "").toString().trim();
+    return !desc && !excerpt;
+  })
+  .map(post => ({
+    file: post.id,
+    title: post.data.title || "(no title)",
+    slug: post.slug || post.id.replace(/\.(md|mdx)$/, ""),
+  }));
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RSS Debug – Txchyon</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 2rem; background: #111; color: #fff; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #444; padding: 0.8rem; text-align: left; }
+    th { background: #222; }
+    code { background: #333; padding: 0.2rem 0.4rem; border-radius: 4px; }
+    a { color: #00ff99; }
+  </style>
+</head>
+<body>
+  <h1>RSS Debug – Posts missing description/excerpt</h1>
+
+  {brokenPosts.length === 0 ? (
+    <p style="color:#00ff99; font-size:1.5rem;">
+      All posts have a description or excerpt. Your RSS should work perfectly now!
+    </p>
+  ) : (
+    <>
+      <p>Found <strong>{brokenPosts.length}</strong> post(s) that will break the RSS feed:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>File</th>
+            <th>Title</th>
+            <th>Slug / URL</th>
+          </tr>
+        </thead>
+        <tbody>
+          {brokenPosts.map(post => (
+            <tr>
+              <td><code>{post.file}</code></td>
+              <td>{post.title}</td>
+              <td><a href={`https://txchyon.com/${post.slug}/`} target="_blank">
+                {post.slug || "(no slug)"}
+              </a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p style="margin-top:2rem;">
+        Just open each file and add one of these lines to the frontmatter:
+        <br /><code>description: "Your 1-2 sentence summary here"</code>
+        <br />or
+        <br /><code>excerpt: "Short teaser here"</code>
+      </p>
+    </>
+  )}
+</body>
+</html>
