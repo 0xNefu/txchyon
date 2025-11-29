@@ -23,7 +23,6 @@ const canonicalUrl = `${siteUrl}${Astro.url.pathname}`;
 const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
 ---
 
-<!-- Meta tags -->
 <head>
   <meta charset="utf-8" />
   <title>{title} | Txchyon</title>
@@ -129,40 +128,26 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
           <Content />
         </div>
 
-        <!-- BEEHIIV SUBSCRIBE FORM – FIXED: COMPACT & BEAUTIFUL -->
-        <div class="my-16 md:my-20 px-4">
-          <div class="mx-auto max-w-2xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-8 text-center shadow-lg">
+        <!-- BEEHIIV SUBSCRIBE FORM – FINAL VERSION (OFFICIAL EMBED) -->
+        <div class="my-16 md:my-24 px-4">
+          <div class="mx-auto max-w-2xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-10 text-center shadow-xl">
             
-            <h3 class="text-2xl sm:text-3xl font-bold mb-3">Get Weekly DeFi Alpha in Your Inbox</h3>
-            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
+            <h3 class="text-2xl sm:text-3xl font-bold mb-4">Get Weekly DeFi Alpha in Your Inbox</h3>
+            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
               Join 56k+ traders getting my private watchlist every Thursday
             </p>
 
-            <script async data-id="beehiiv-embed" src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-
-            <div class="w-full max-w-lg mx-auto overflow-hidden rounded-xl">
-              <iframe
-                src="https://subscribe-forms.beehiiv.com/cc63cad9-7786-4f32-badd-628ad1226266"
-                class="beehiiv-embed w-full"
-                data-test-id="beehiiv-embed"
-                frameborder="0"
-                scrolling="no"
-                style="
-                  height: 320px !important;
-                  max-height: 380px;
-                  border-radius: 12px;
-                  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-                "
-                onload="this.style.height='320px'; 
-                         setTimeout(() => {
-                           const h = this.contentWindow.document.body.scrollHeight + 40;
-                           this.style.height = (h > 380 ? 380 : h) + 'px';
-                         }, 800);"
-              ></iframe>
+            <!-- Official Beehiiv embed – perfect on all devices, no cutoff ever -->
+            <div 
+              data-beehiiv-embed="cc63cad9-7786-4f32-badd-628ad1226266"
+              data-theme="light"
+              class="w-full max-w-lg mx-auto"
+            >
+              <script async src="https://embed.beehiiv.com/embed.js"></script>
             </div>
           </div>
         </div>
-        <!-- END OF SUBSCRIBE FORM -->
+        <!-- END SUBSCRIBE FORM -->
 
         <!-- Tags + Share -->
         <div class="flex flex-wrap items-center justify-between">
