@@ -17,12 +17,16 @@
       "url": "/categories/evm"
     },
     {
-      "name": "Bitcoin",
-      "url": "/categories/bitcoin"
+      "name": "Tutorials",
+      "url": "/categories/tutorial"
     },
     {
       "name": "Research",
       "url": "/categories/research"
+    },
+    {
+      "name": "Airdrop",
+      "url": "/categories/airdrop"
     }
   ],
   "footer": [
