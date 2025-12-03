@@ -1,0 +1,27 @@
+---
+// Client-side script for theme initialization
+// Use .astro to prevent hydration issues
+---
+
+<script is:inline>
+// Immediately set theme to prevent flash
+(function() {
+  const theme = (() => {
+    // 1. Check localStorage
+    const stored = localStorage.getItem('theme');
+    if (stored) return stored;
+    
+    // 2. Check system preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    
+    // 3. Default to light
+    return 'light';
+  })();
+  
+  // Apply immediately before any rendering
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>

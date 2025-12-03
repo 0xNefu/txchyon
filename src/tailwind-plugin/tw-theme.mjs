@@ -19,16 +19,16 @@ const defaultColorGroups = [
   { colors: themeConfig.colors.default.text_color, prefix: "" },
 ];
 const darkColorGroups = [];
-if (themeConfig.colors.darkmode?.theme_color) {
+if (themeConfig.colors.dark?.theme_color) {
   darkColorGroups.push({
-    colors: themeConfig.colors.darkmode.theme_color,
-    prefix: "darkmode-",
+    colors: themeConfig.colors.dark.theme_color,
+    prefix: "dark-",
   });
 }
-if (themeConfig.colors.darkmode?.text_color) {
+if (themeConfig.colors.dark?.text_color) {
   darkColorGroups.push({
-    colors: themeConfig.colors.darkmode.text_color,
-    prefix: "darkmode-",
+    colors: themeConfig.colors.dark.text_color,
+    prefix: "dark-",
   });
 }
 

@@ -1,0 +1,165 @@
+﻿/* Dark mode - Charcoal Black Theme */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Headings */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff !important;
+}
+
+/* Text elements */
+.dark .text-black,
+.dark .text-dark,
+.dark .text-text {
+  color: #e0e0e0 !important;
+}
+
+.dark .text-gray-700,
+.dark .text-gray-600,
+.dark .text-gray-500 {
+  color: #a0a0a0 !important;
+}
+
+/* Backgrounds */
+.dark .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+.dark .bg-body {
+  background-color: #121212 !important;
+}
+
+.dark .bg-gray-50,
+.dark .bg-gray-100 {
+  background-color: #1e1e1e !important;
+}
+
+/* Cards, sections, containers */
+.dark .section,
+.dark .card,
+.dark article,
+.dark .post-preview,
+.dark .rounded-lg {
+  background-color: #1a1a1a !important;
+  border-color: #333333 !important;
+}
+
+/* Post cards specifically */
+.dark .row .col-12,
+.dark .row .sm\\:col-6 {
+  background-color: #1a1a1a !important;
+}
+
+.dark .row .col-12 a,
+.dark .row .sm\\:col-6 a {
+  background-color: #1a1a1a !important;
+}
+
+/* Borders */
+.dark .border-gray-200,
+.dark .border-gray-300 {
+  border-color: #333333 !important;
+}
+
+.dark .border-b {
+  border-bottom-color: #333333 !important;
+}
+
+/* Links */
+.dark a {
+  color: #01AD9F !important;
+}
+
+.dark a:hover {
+  color: #00C2B3 !important;
+}
+
+/* Buttons */
+.dark .bg-blue-500 {
+  background-color: #2563eb !important;
+}
+
+.dark .bg-blue-600 {
+  background-color: #1d4ed8 !important;
+}
+
+.dark .hover\:bg-blue-600:hover {
+  background-color: #1e40af !important;
+}
+
+/* Primary color elements */
+.dark .bg-primary {
+  background-color: #01AD9F !important;
+}
+
+.dark .border-primary {
+  border-color: #01AD9F !important;
+}
+
+.dark .text-primary {
+  color: #01AD9F !important;
+}
+
+/* Pagination */
+.dark .border-primary {
+  border-color: #01AD9F !important;
+}
+
+/* Footer */
+.dark footer.bg-dark {
+  background-color: #0a0a0a !important;
+}
+
+.dark footer .text-white\\/75 {
+  color: #a0a0a0 !important;
+}
+
+/* Header */
+.dark header {
+  border-bottom-color: #333333 !important;
+}
+
+.dark header .border-gray-200 {
+  border-color: #333333 !important;
+}
+
+/* Code blocks */
+.dark code,
+.dark pre {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border-color: #333333 !important;
+}
+
+/* Hover states */
+.dark .hover\:bg-gray-100:hover {
+  background-color: #2a2a2a !important;
+}
+
+/* Floating bubble */
+.dark .fixed .bg-white {
+  background-color: #1a1a1a !important;
+}
+
+.dark .fixed .dark\\:bg-gray-900 {
+  background-color: #1a1a1a !important;
+}
+
+.dark .fixed .border-gray-200 {
+  border-color: #333333 !important;
+}
+
+.dark .fixed .dark\\:border-gray-800 {
+  border-color: #333333 !important;
+}

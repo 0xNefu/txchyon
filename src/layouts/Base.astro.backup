@@ -1,4 +1,4 @@
-﻿---
+---
 import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
@@ -91,7 +91,7 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
     <meta name="author" content={config.metadata.meta_author} />
   </head>
 
-  <body class="bg-body text-text font-primary font-normal leading-relaxed dark:bg-dark dark:text-light">
+  <body>
     <TwSizeIndicator />
     <Header />
     <main id="main-content" class="min-h-[60vh]">
@@ -103,4 +103,3 @@ const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname
     <FloatingBubble client:load />
   </body>
 </html>
-
