@@ -105,7 +105,7 @@ If you need a custom theme, theme customization, or complete website development
 to upload to git 
 
 git add .
-git commit -m "add the crypto buyers guide 2026"
+git commit -m "top 8 Dex"
 git push
 
 

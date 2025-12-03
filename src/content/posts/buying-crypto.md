@@ -180,7 +180,7 @@ Your perfect 2026 stack usually looks like this:
 
 Use the referral links above to grab thousands in bonuses, then move to DEXs for the real alpha.
 
-Happy trading — see you on the other side of $200k Bitcoin!
+Happy trading — see you on the other side of $200k Bitcoin! If the Bullrun continues. Make sure to get your funds off the exchanges, "not your keys not your coins!"
 
 **Disclosure:** CEX links are affiliate/referral links. DEX links are not affiliated. We only recommend what we personally use.
 
