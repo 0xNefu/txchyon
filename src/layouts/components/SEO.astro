@@ -15,11 +15,11 @@ const {
 const finalTitle = title ?? "Txchyon";
 const finalDescription = description ?? "on-chain research + Defi alpha and Airdrops";
 const finalImage = image
-  ? `${config.site.base_url}${image.startsWith("/") ? "" : "/"}${image}`
+  ? (image.startsWith("http") ? image : `${config.site.base_url}${image.startsWith("/") ? "" : "/"}${image}`)
   : `${config.site.base_url}/images/tokens.jpg`;
 
-const finalCanonical = canonical 
-  ? canonical 
+const finalCanonical = canonical
+  ? canonical
   : new URL(Astro.url.pathname, Astro.site).toString();
 ---
 <AstroSEO
@@ -52,3 +52,4 @@ const finalCanonical = canonical
     image: finalImage,
   }}
 />
+

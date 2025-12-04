@@ -1,4 +1,4 @@
-{
+﻿{
   "site": {
     "title": "Txchyon",
     "base_url": "https://txchyon.com",
@@ -17,7 +17,7 @@
 
   "metadata": {
     "meta_author": "NefuTrades",
-    "meta_image": "/images/og-image.jpg",
+    "meta_image": "/images/tokens.jpg",
     "meta_description": "Raw data. Real alpha. Live Aster positions and Solana infra bets."
   },
 
@@ -28,7 +28,7 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "© 2025 Txchyon Capital"
+    "copyright": "Â© 2025 Txchyon Capital"
   },
 
   "contactinfo": {
