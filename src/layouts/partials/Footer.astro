@@ -1,9 +1,12 @@
----
+﻿---
 import Social from "@/components/Social.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
+import { getArticleCount } from "@/lib/utils/articleCounter";
+
+const articleCount = await getArticleCount();
 ---
 
 <footer class="section bg-dark">
@@ -32,10 +35,10 @@ import { markdownify } from "@/lib/utils/textConverter";
       </li>
     </ul>
 
-    {/* Social icons (from your social.json) */}
-    <Social source={social.main} className="social-icons mb-8" />
+    {/* Social icons */}
+    <Social class="social-icons mb-8" />
 
-    {/* NEW: Prominent Telegram link */}
+    {/* Telegram CTA */}
     <div class="mb-8">
       <a
         href="https://t.me/txchyon"
@@ -47,15 +50,19 @@ import { markdownify } from "@/lib/utils/textConverter";
       </a>
     </div>
 
-    {/* Hidden IndieWeb verification links (including Telegram) */}
-    <div class="hidden">
-      <a rel="me" href="https://github.com/0xnefu">GitHub</a>
-      <a rel="me" href="https://twitter.com/txchyon">Twitter</a>
-      <a rel="me" href="https://x.com/txchyon">X.com</a>
-      <a rel="me" href="https://t.me/txchyon">Telegram</a>
+    {/* Article Count */}
+    <div class="mb-6">
+      <p class="text-white/75 text-lg">
+        <span class="inline-flex items-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.968 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+          </svg>
+          <span class="font-semibold">{articleCount}</span> Articles Published
+        </span>
+      </p>
     </div>
 
     {/* Copyright */}
-    <p set:html={markdownify(config.params.copyright)} class="text-white/75" />
+    <p class="text-white/75">© 2025 Txchyon Capital</p>
   </div>
 </footer>
