@@ -5,11 +5,12 @@ const { main } = menu as { main: { name: string; url: string }[] };
 ---
 
 <header class="py-6 border-b border-gray-200 dark:border-gray-800">
-  <div class="container mx-auto px-6 flex items-center justify-between relative">
+  <!-- Main container with proper left padding -->
+  <div class="container mx-auto px-4 flex items-center justify-between relative">
     
-    <!-- LOGO + NAME -->
+    <!-- LOGO + NAME - Moved left with margin -->
     <div class="flex items-center space-x-3">
-      <a href="/" class="flex items-center space-x-3">
+      <a href="/" class="flex items-center space-x-3 ml-2 lg:ml-4">
         <img
           src="/images/logo.jpg"
           alt="Txchyon"
@@ -21,32 +22,38 @@ const { main } = menu as { main: { name: string; url: string }[] };
       </a>
     </div>
 
-    <!-- Desktop Nav (unchanged) -->
-    <nav class="hidden md:flex items-center space-x-10 lg:ml-16">
+    <!-- Desktop Nav - Moved right with proper spacing -->
+    <nav class="hidden md:flex items-center space-x-8 lg:space-x-10 ml-8 lg:ml-12">
       {main.map((item) => (
         <a
           href={item.url}
-          class="text-lg font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition"
+          class="text-lg font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition whitespace-nowrap"
         >
           {item.name}
         </a>
       ))}
-      <a
-        href="/tools"
-        class="text-lg font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition"
-      >
-        Tools & Disclosures
-      </a>
     </nav>
 
-    <!-- Search + Theme (desktop) -->
-    <div class="flex items-center gap-8">
+    <!-- Search + Theme + RSS (desktop) - Moved right with more space -->
+    <div class="flex items-center gap-6 lg:gap-8">
+      <!-- RSS Feed Icon - More spacing -->
+      <a href="/rss.xml" class="text-black dark:text-white hover:text-blue-600 transition ml-2" title="RSS Feed">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6.18 15.64a2.18 2.18 0 1 1-4.36 0 2.18 2.18 0 0 1 4.36 0z"/>
+          <path d="M4 4.44A11.83 11.83 0 0 1 15.89 16.33h-2.3A9.51 9.51 0 0 0 4 6.75z"/>
+          <path d="M4 11.16a5.9 5.9 0 0 1 5.9 5.9h-2.3a3.6 3.6 0 0 0-3.6-3.6z"/>
+        </svg>
+      </a>
+      
+      <!-- Search Icon -->
       <a href="/search" class="text-black dark:text-white hover:text-blue-600 transition">
         <IoSearch class="w-6 h-6" />
       </a>
-            <button
+      
+      <!-- Theme Toggle -->
+      <button
         id="theme-toggle"
-        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition mr-2 lg:mr-4"
       >
         <!-- Moon icon for light mode (hidden in dark) -->
         <svg class="w-5 h-5 block data-[theme=dark]:hidden text-gray-700" fill="currentColor" viewBox="0 0 20 20">
@@ -58,7 +65,7 @@ const { main } = menu as { main: { name: string; url: string }[] };
         </svg>
       </button>
 
-      <!-- Mobile Hamburger (ONLY NEW PART) -->
+      <!-- Mobile Hamburger -->
       <div class="md:hidden" x-data="{ open: false }">
         <button @click="open = !open" class="text-black dark:text-white z-50">
           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,15 +87,20 @@ const { main } = menu as { main: { name: string; url: string }[] };
                 {item.name}
               </a>
             ))}
-            <a href="/tools" class="block text-2xl font-bold text-black dark:text-white hover:text-blue-600 dark:hover:text-blue-400">
-              Tools & Disclosures
-            </a>
 
             <div class="pt-6 border-t border-gray-200 dark:border-gray-700">
               <div class="flex space-x-8 text-3xl">
                 <a href="https://twitter.com/txchyon" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white">X</a>
                 <a href="https://t.me/txchyon" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white">Telegram</a>
                 <a href="https://tinyurl.com/thereplyguy" target="_blank" class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white">Reply Guy</a>
+                <!-- RSS Icon in Mobile Menu -->
+                <a href="/rss.xml" class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white" title="RSS Feed">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.18 15.64a2.18 2.18 0 1 1-4.36 0 2.18 2.18 0 0 1 4.36 0z"/>
+                    <path d="M4 4.44A11.83 11.83 0 0 1 15.89 16.33h-2.3A9.51 9.51 0 0 0 4 6.75z"/>
+                    <path d="M4 11.16a5.9 5.9 0 0 1 5.9 5.9h-2.3a3.6 3.6 0 0 0-3.6-3.6z"/>
+                  </svg>
+                </a>
               </div>
             </div>
 
@@ -105,4 +117,19 @@ const { main } = menu as { main: { name: string; url: string }[] };
 <!-- Alpine.js (add once in layout or head if missing) -->
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-<!-- Your original dark mode script — unchanged -->
+<!-- Optional: Add custom CSS if needed -->
+<style>
+  /* Additional custom spacing if Tailwind isn't enough */
+  @media (min-width: 768px) {
+    /* Ensure nav menu has enough space from logo */
+    .header nav {
+      margin-left: 2rem !important;
+    }
+    
+    /* Ensure RSS button has breathing room */
+    .header .rss-button {
+      margin-left: 1rem !important;
+      margin-right: 0.5rem !important;
+    }
+  }
+</style>
