@@ -70,14 +70,28 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
           <Content />
         </div>
 
-        <!-- FIXED BEEHIIV FORM -->
+        <!-- MOBILE-OPTIMIZED BEEHIIV FORM -->
         <div class="my-16 md:my-20 px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-2xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-8 lg:p-10 text-center shadow-lg">
-            <h3 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight">
+            
+            <!-- Desktop Title (full) -->
+            <h3 class="hidden sm:block text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight">
               Get Weekly DeFi Alpha in Your Inbox
             </h3>
-            <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 sm:mb-10 max-w-xl mx-auto leading-relaxed">
+            
+            <!-- Mobile Title (shorter) -->
+            <h3 class="sm:hidden text-2xl font-bold mb-3 leading-tight">
+              Weekly DeFi Alpha
+            </h3>
+            
+            <!-- Desktop Description -->
+            <p class="hidden sm:block text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-8 sm:mb-10 max-w-xl mx-auto leading-relaxed">
               Join 56k+ traders getting my private watchlist every Thursday
+            </p>
+            
+            <!-- Mobile Description (shorter) -->
+            <p class="sm:hidden text-base text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto leading-relaxed">
+              Private watchlist for 56k+ traders
             </p>
 
             <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
@@ -87,7 +101,7 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
               <iframe
                 src="https://subscribe-forms.beehiiv.com/cc63cad9-7786-4f32-badd-628ad1226266"
                 class="w-full rounded-lg"
-                style="height: 400px; border: none;"
+                style="height: 380px; border: none;"
                 frameborder="0"
                 scrolling="no"
                 loading="lazy"
