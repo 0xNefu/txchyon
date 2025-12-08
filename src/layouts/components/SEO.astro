@@ -34,13 +34,16 @@ const finalCanonical = canonical ?? "https://txchyon.com" + Astro.url.pathname;
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content={finalTitle} />
+<meta property="og:site_name" content="Txchyon" /> <!-- ADDED: Required for proper branding -->
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={finalCanonical} />
-<meta property="twitter:title" content={finalTitle} />
-<meta property="twitter:description" content={finalDescription} />
-<meta property="twitter:image" content={finalImage} />
+<!-- Twitter - FIXED: Changed from "property" to "name" -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={finalCanonical} />
+<meta name="twitter:title" content={finalTitle} />
+<meta name="twitter:description" content={finalDescription} />
+<meta name="twitter:image" content={finalImage} />
+<meta name="twitter:site" content="@NefuTrades" /> <!-- ADDED: Your Twitter handle -->
+<meta name="twitter:creator" content="@NefuTrades" /> <!-- ADDED: Creator tag -->
 
 <!-- Canonical URL -->
 <link rel="canonical" href={finalCanonical} />
