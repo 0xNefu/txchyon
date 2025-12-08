@@ -113,3 +113,9 @@ The Sitemap links are
 Search Engine,URL to Submit
 Google Search Console,https://txchyon.com/sitemap.xml
 Bing Webmaster Tools,https://txchyon.com/sitemap.xml
+
+For Images 
+
+![Description of image](/images/your-image.jpg)
+
+![Screenshot example](/screenshots/example.jpg)

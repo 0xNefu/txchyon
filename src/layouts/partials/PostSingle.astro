@@ -70,7 +70,7 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
           <Content />
         </div>
 
-        <!-- YOUR FULL BEEHIIV FORM – 100% UNTOUCHED -->
+        <!-- FIXED BEEHIIV FORM -->
         <div class="my-16 md:my-20 px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-2xl rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 p-6 sm:p-8 lg:p-10 text-center shadow-lg">
             <h3 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 leading-tight">
@@ -82,15 +82,15 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
 
             <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
 
-            <div class="w-full max-w-lg mx-auto overflow-hidden rounded-xl">
+            <!-- FIXED: Properly sized container -->
+            <div class="w-full max-w-md mx-auto">
               <iframe
                 src="https://subscribe-forms.beehiiv.com/cc63cad9-7786-4f32-badd-628ad1226266"
-                class="beehiiv-embed w-full h-auto"
-                data-test-id="beehiiv-embed"
+                class="w-full rounded-lg"
+                style="height: 400px; border: none;"
                 frameborder="0"
                 scrolling="no"
-                style="min-height: 360px; height: 360px; max-height: 420px; width: 100%; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);"
-                onload="this.style.height='360px';setTimeout(()=>{try{const h=this.contentDocument?.body?.scrollHeight||this.contentWindow.document.body.scrollHeight;const nh=Math.min(Math.max(h+20,360),420);this.style.height=nh+'px'}catch(e){this.style.height='360px'}},500);"
+                loading="lazy"
               ></iframe>
             </div>
 
@@ -104,7 +104,7 @@ const ogImage = image ? `${siteUrl}${image}` : `${siteUrl}/og-default.jpg`;
           </div>
         </div>
 
-        <!-- ONLY CHANGE: replaced the broken flex layout with a simple centered one -->
+        <!-- Tags and Share Buttons -->
         <div class="my-20 text-center border-t-2 border-gray-200 dark:border-gray-700 pt-12">
           <!-- Tags -->
           <div class="flex flex-wrap justify-center gap-3 mb-12">
