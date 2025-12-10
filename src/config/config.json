@@ -27,13 +27,13 @@
   },
 
   "params": {
-    "contact_form_action": "#",
-    "copyright": "Â© 2025 Txchyon Capital"
+    "contact_form_action": "https://formspree.io/f/xzznjdnr",
+    "copyright": "© 2025 Txchyon Capital"
   },
 
   "contactinfo": {
-    "address": "",
-    "email": "",
+    "address": "San Francisco, CA",
+    "email": "hello@txchyon.com",
     "phone": ""
   },
 
