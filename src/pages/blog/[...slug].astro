@@ -1,0 +1,47 @@
+---
+// src/pages/blog/[...slug].astro
+
+import Base from "@/layouts/Base.astro";
+import PostSingle from "@/partials/PostSingle.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  
+  console.log('=== DEBUG getStaticPaths ===');
+  console.log('Number of posts:', posts.length);
+  console.log('Post IDs:', posts.map(p => p.id));
+  
+  // Check for your example post
+  const ourPost = posts.find(p => p.id === 'getting-started/how-to-buy-crypto');
+  console.log('Our post found?', ourPost ? 'YES' : 'NO');
+  
+  return posts.map((post) => ({
+    params: { slug: post.id }, // Handles nested like 'getting-started/how-to-buy-crypto'
+    props: { post },
+  }));
+}
+
+const { slug } = Astro.params;
+console.log('=== DEBUG Page Render ===');
+console.log('URL param "slug":', slug);
+
+const { post } = Astro.props;
+console.log('Post from props:', post ? post.id : 'UNDEFINED');
+
+if (!post) {
+  console.log('ERROR: No post found, returning 404');
+  return Astro.redirect('/404');
+}
+
+const { title, meta_title, image, description } = post.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  image={image}
+  description={description}
+>
+  <PostSingle post={post} />
+</Base>
