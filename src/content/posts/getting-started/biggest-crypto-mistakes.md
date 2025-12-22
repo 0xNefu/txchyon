@@ -41,7 +41,7 @@ Fear of Missing Out drives many to buy at peak prices during hype cycles. Social
 When the hype fades, prices often crash, leaving buyers with heavy losses.
 
 **How to Avoid It:**  
-Stick to a plan. Use dollar-cost averaging to buy fixed amounts regularly. Research projects thoroughly before investing. Our guide on [how to buy crypto](https://txchony.com/blog/getting-started/how-to-buy-crypto) emphasizes measured approaches.
+Stick to a plan. Use dollar-cost averaging to buy fixed amounts regularly. Research projects thoroughly before investing. Our guide on [how to buy crypto](https://txchyon.com/blog/getting-started/how-to-buy-crypto) emphasizes measured approaches.
 
 ### 3. Ignoring Transaction Fees and Hidden Costs
 
