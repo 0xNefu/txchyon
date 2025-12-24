@@ -1,16 +1,16 @@
 ---
-title: "How to Set Up MetaMask Wallet: Step-by-Step Tutorial for Beginners 2026"
-description: "MetaMask is the top Ethereum wallet for DeFi and NFTs. This 2026 guide covers installation, setup, security, adding networks, and basic use for beginners."
-date: 2025-12-23
-updatedDate: 2025-12-23
-image: "/images/posts/setup-metamask-2026.jpg"
+title: "How to Set Up MetaMask Wallet: Step-by-Step Tutorial for Beginners"
+description: "MetaMask is the top Ethereum wallet for DeFi and NFTs. This guide covers installation, setup, security, adding networks, and basic use for beginners."
+date: 2025-12-22
+updatedDate: 2025-12-22
+image: "/images/posts/metamask2.jpg"
 heroImageAlt: "MetaMask fox logo with setup steps on browser and mobile"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"
 tags: ["MetaMask Setup", "MetaMask Tutorial", "Ethereum Wallet", "DeFi Wallet", "Beginner Guide"]
 category: "getting-started"
 subcategory: "wallet-setup"
-draft: true
+draft: false
 ---
 
 ## Introduction: Why MetaMask for Beginners

@@ -1,5 +1,5 @@
 ---
-title: "What is Cryptocurrency? A Complete Beginner's Guide to Blockchain in 2026"
+title: "What is Cryptocurrency? A Complete Beginner's Guide to Blockchain"
 description: "Confused about cryptocurrency and blockchain? This beginner-friendly guide explains what cryptocurrency is, how blockchain technology works, why it matters in 2026, and the key differences from traditional money."
 date: 2025-12-22
 updatedDate: 2025-12-22
@@ -10,7 +10,7 @@ authorTwitter: "@txchyon"
 tags: ["What is Cryptocurrency", "Blockchain Explained", "Crypto Basics", "Beginner Guide", "Bitcoin", "Ethereum", "Decentralization"]
 category: "getting-started"
 subcategory: "basics"
-draft: true
+draft: false
 ---
 
 ## Introduction: Understanding Cryptocurrency in 2026
