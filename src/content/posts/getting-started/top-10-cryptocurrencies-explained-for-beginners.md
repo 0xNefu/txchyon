@@ -23,6 +23,7 @@ For absolute beginners, focusing on these established coins provides a safer and
 
 This guide covers the top 10 cryptocurrencies (based on consistent rankings over recent years), because each entry explains what the project is, its main purpose, and why it matters without price predictions or investment advice. I'll leave it up to you to decide which one you want to hold in your wallet just use this guide to educate yourself on the top 10. 
 
+
 Pair this with our [crypto terminology glossary](https://txchyon.com/blog/getting-started/crypto-terminology-glossary) for definitions and our detailed comparison in [Bitcoin vs Ethereum for beginners](https://txchyon.com/blog/getting-started/bitcoin-vs-ethereum).
 
 ## 1. Bitcoin (BTC)
@@ -69,6 +70,14 @@ High-performance blockchain launched in 2020.
 **Main purpose:** Support high-throughput applications like DeFi, NFTs, and gaming.  
 **Key feature:** Capable of thousands of transactions per second at very low fees.  
 **Why it matters:** Popular alternative to Ethereum for cost-conscious developers and users.
+
+
+
+
+![top 10 coinmarketcap](/screenshots/top10coinmarketcap.jpg)
+
+
+
 
 ## 6. USD Coin (USDC)
 
