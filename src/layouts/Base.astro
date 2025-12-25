@@ -2,7 +2,6 @@
 import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
-import { plainify } from "@/lib/utils/textConverter";
 import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
 import FloatingBubble from "@/components/FloatingBubble.jsx";
@@ -30,11 +29,38 @@ export interface Props {
 
 const { title, meta_title, description, image, noindex, canonical } = Astro.props;
 
-const finalTitle = plainify(meta_title ?? title ?? config.site.title);
-const finalDescription = plainify(description ?? config.metadata.meta_description);
-const finalImage = image
+// === IMPROVED: HTML escape function that handles already-encoded entities ===
+const escapeHtml = (text) => {
+  if (!text) return '';
+  
+  // First, decode any existing HTML entities to avoid double-encoding
+  let processed = text.toString()
+    .replace(/&amp;/g, '&')   // Decode &amp; to &
+    .replace(/&lt;/g, '<')    // Decode &lt; to <
+    .replace(/&gt;/g, '>')    // Decode &gt; to >
+    .replace(/&quot;/g, '"')  // Decode &quot; to "
+    .replace(/&#039;/g, "'")  // Decode &#039; to '
+    .replace(/&nbsp;/g, ' '); // Decode &nbsp; to space
+  
+  // Then properly encode everything for HTML attributes
+  return processed
+    .replace(/&/g, '&amp;')   // Encode & to &amp;
+    .replace(/</g, '&lt;')    // Encode < to &lt;
+    .replace(/>/g, '&gt;')    // Encode > to &gt;
+    .replace(/"/g, '&quot;')  // Encode " to &quot;
+    .replace(/'/g, '&#039;')  // Encode ' to &#039;
+    .trim();
+};
+
+// Use escapeHtml for meta tags
+const finalTitle = escapeHtml(meta_title ?? title ?? config.site.title);
+const finalDescription = escapeHtml(description ?? config.metadata.meta_description);
+
+// Handle image prop safely
+const finalImage = image && typeof image === 'string' && image.trim()
   ? `${config.site.base_url}${image.startsWith("/") ? "" : "/"}${image}`
   : `${config.site.base_url}${config.metadata.meta_image}`;
+
 const finalCanonical = canonical ?? `${config.site.base_url}${Astro.url.pathname}`;
 ---
 <!doctype html>

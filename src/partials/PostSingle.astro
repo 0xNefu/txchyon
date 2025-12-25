@@ -1,7 +1,7 @@
 ﻿---
 import SocialShare from "@/components/SocialShare.astro";
 import SimilarPosts from "@/components/SimilarPosts.astro";
-import SEO from "@/layouts/components/SEO.astro";
+// REMOVED: import SEO from "@/layouts/components/SEO.astro"; <-- Remove this line
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import similarItems from "@/lib/utils/similarItems";
@@ -36,17 +36,7 @@ const getAuthorNames = () => {
 const authorNames = getAuthorNames();
 ---
 
-<!-- Add SEO component for social cards -->
-<SEO 
-  title={`${title} | Txchyon`}
-  description={description}
-  image={image || "/images/tokens.jpg"}
-  canonical={canonicalUrl}
-  type="article"
-  publishedTime={date.toISOString()}
-  author={authorNames}
-  section={categories?.[0] || "DeFi"}
-/>
+<!-- REMOVED: The duplicate SEO component that was here -->
 
 <!-- Keep existing viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -58,7 +48,7 @@ const authorNames = getAuthorNames();
       <div class="md:col-10 text-center">
         <h1 set:html={markdownify(title)} class="h2" />
         <ul class="mt-4 flex flex-wrap items-center justify-center text-text">
-          <!-- Author, Date, Categories â€“ with safe handling -->
+          <!-- Author, Date, Categories – with safe handling -->
           {authorNames !== "NefuTrades" && (
             <li class="mr-4 flex items-center">
               {authorNames.split(", ").map((name: string, i: number) => (
@@ -209,7 +199,7 @@ const authorNames = getAuthorNames();
             ))}
           </div>
 
-          <!-- SHARE BUTTONS â€“ NOW VISIBLE -->
+          <!-- SHARE BUTTONS – NOW VISIBLE -->
           <SocialShare title={title} url={Astro.url} />
         </div>
       </div>
@@ -217,7 +207,7 @@ const authorNames = getAuthorNames();
   </div>
 </section>
 
-<!-- Similar posts â€“ untouched -->
+<!-- Similar posts – untouched -->
 {similarPosts.length > 0 && (
   <section class="section pt-0">
     <div class="container">
@@ -226,6 +216,3 @@ const authorNames = getAuthorNames();
     </div>
   </section>
 )}
-
-
-

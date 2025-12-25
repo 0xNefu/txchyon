@@ -1,5 +1,5 @@
 ---
-// src/pages/blog/[...slug].astro - FIXED WITH DEBUG LOGS
+// src/pages/blog/[...slug].astro - FIXED
 
 import Base from "@/layouts/Base.astro";
 import PostSingle from "@/partials/PostSingle.astro";
@@ -7,31 +7,6 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("posts", ({ data }) => !data.draft);
-  
-  console.log('=== DEBUG getStaticPaths ===');
-  console.log('Number of posts:', posts.length);
-  
-  posts.forEach((post, index) => {
-    console.log(`\n[Post ${index + 1}] ${post.data.title}`);
-    console.log(`  ID: "${post.id}"`);
-    console.log(`  Slug: "${post.slug}"`);
-    console.log(`  File path: ${post.id}.md`);
-    console.log(`  Category: "${post.data.category}"`);
-    console.log(`  Subcategory: "${post.data.subcategory}"`);
-    console.log(`  Will create route: /blog/${post.slug}`);
-    console.log(`  Expected file: src/content/posts/${post.id}.md`);
-  });
-  
-  const ourPost = posts.find(p => p.id === 'getting-started/how-to-buy-crypto');
-  console.log('\nOur post found?', ourPost ? 'YES' : 'NO');
-  
-  if (ourPost) {
-    console.log('Example post details:');
-    console.log('  Title:', ourPost.data.title);
-    console.log('  Full ID:', ourPost.id);
-    console.log('  Should be accessible at: /blog/getting-started/how-to-buy-crypto');
-  }
-  
   return posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
@@ -55,41 +30,37 @@ if (!post) {
   post = allPosts.find((p) => p.slug === rawSlug);
 }
 
-// Debug render
-console.log('\n=== DEBUG Page Render ===');
-console.log('URL param "slug":', rawSlug);
-console.log('Cleaned slug used:', cleanSlug);
-console.log('Full URL:', Astro.url.pathname);
-
 if (!post) {
-  console.log('ERROR: No post found');
-  console.log('Requested slug:', rawSlug);
-  console.log('Available slugs:', allPosts.map(p => p.slug));
-
-  // If it was a .md URL, 301 redirect to clean version
   if (rawSlug.endsWith('.md')) {
     const redirectSlug = rawSlug.slice(0, -3);
-    console.log(`Redirecting .md URL to: /blog/${redirectSlug}`);
     throw Astro.redirect(`/blog/${redirectSlug}`, 301);
   }
-
-  // Otherwise, 404
   throw Astro.redirect('/404');
 }
 
-console.log('Post found!');
-console.log('  Title:', post.data.title);
-console.log('  Category:', post.data.category);
-console.log('  Subcategory:', post.data.subcategory);
-
 const { title, meta_title, image, description } = post.data;
+
+// === FIX: Escape HTML in description ===
+const escapeHtml = (text) => {
+  if (!text) return '';
+  return text.toString()
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+    .trim();
+};
+
+const postImage = image || `/images/posts/default-og.jpg`;
+const escapedDescription = escapeHtml(description);
 ---
 
 <Base
   title={title}
   meta_title={meta_title}
-  image={image}
-  description={description}
+  image={String(postImage)}
+  description={escapedDescription}  <!-- Pass ESCAPED description -->
 >
   <PostSingle post={post} />
 </Base>
