@@ -15,14 +15,6 @@ draft: false
 
 # 📘 Comprehensive Guide to Global Crypto Regulations
 
-**Primary SEO Keywords (3–7 words):**  
-`global crypto regulations`  
-`international cryptocurrency compliance`  
-`AML KYC rules for crypto`  
-`crypto licensing requirements worldwide`  
-`cryptocurrency regulatory framework`  
-`crypto investor compliance guide`  
-
 ---
 
 ## 📌 Introduction — Understanding Global Crypto Regulations
