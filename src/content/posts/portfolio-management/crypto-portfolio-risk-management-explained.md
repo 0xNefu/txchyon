@@ -21,8 +21,8 @@ It’s not about avoiding risk entirely — it’s about **controlling how much 
 
 If allocation decides *where* money goes and rebalancing decides *when* adjustments happen, risk management decides **how bad things can get**.
 
-If you’re new to portfolio structure, start here first:
-👉 **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://txchyon.com/categories/portfolio-management/)**
+If you’re new to portfolio structure, start here first:  
+👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -32,14 +32,14 @@ Most portfolios don’t fail because of bad returns.
 They fail because of **excessive drawdowns**.
 
 Common causes:
-- overexposure to altcoins
-- no stablecoin buffer
-- ignoring volatility
-- emotional decision-making
+- overexposure to altcoins  
+- no stablecoin buffer  
+- ignoring volatility  
+- emotional decision-making  
 
 Good risk management ensures you:
-- survive bear markets
-- avoid forced selling
+- survive bear markets  
+- avoid forced selling  
 - stay invested long enough to win
 
 ---
@@ -55,20 +55,20 @@ Too many high-volatility assets = fragile portfolio.
 Allocation sets the *baseline risk*.
 
 👉 Review:  
-**[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://txchyon.com/categories/portfolio-management/)**
+**[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
 ### 2️⃣ Rebalancing Risk
 
 Without rebalancing:
-- winners dominate exposure
-- risk creeps up unnoticed
+- winners dominate exposure  
+- risk creeps up unnoticed  
 
 Rebalancing pulls risk back down systematically.
 
 👉 Learn how to do it properly:  
-**[How to Rebalance a Crypto Portfolio (Simple Step-by-Step Guide)](https://txchyon.com/categories/portfolio-management/)**
+**[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ---
 
@@ -77,9 +77,9 @@ Rebalancing pulls risk back down systematically.
 This is where most people fail.
 
 Risk increases when:
-- single positions exceed safe percentages
-- correlated assets dominate
-- leverage is added without limits
+- single positions exceed safe percentages  
+- correlated assets dominate  
+- leverage is added without limits  
 
 A portfolio should never hinge on one outcome.
 
@@ -91,8 +91,8 @@ A portfolio should never hinge on one outcome.
 No single asset should threaten your entire portfolio.
 
 Typical caps:
-- BTC / ETH: 30–50%
-- Altcoins: 5–15% per position
+- BTC / ETH: 30–50%  
+- Altcoins: 5–15% per position  
 - Memecoins: minimal or isolated risk
 
 ---
@@ -103,7 +103,7 @@ Volatility is normal.
 **Drawdowns are what break portfolios.**
 
 Ask:
-- “Can I survive a 50% drawdown?”
+- “Can I survive a 50% drawdown?”  
 - “What happens if this position goes to zero?”
 
 If the answer scares you, risk is too high.
@@ -113,9 +113,9 @@ If the answer scares you, risk is too high.
 ### Rule 3: Use Stablecoins as Shock Absorbers
 
 Stablecoins:
-- reduce overall volatility
-- give you buying power during crashes
-- prevent emotional selling
+- reduce overall volatility  
+- give you buying power during crashes  
+- prevent emotional selling  
 
 They are a **risk tool**, not “missed upside.”
 
@@ -124,15 +124,15 @@ They are a **risk tool**, not “missed upside.”
 ## Correlation Risk (The Hidden Killer)
 
 Holding:
-- 10 altcoins
-- all tied to the same narrative
-- all moving together
+- 10 altcoins  
+- all tied to the same narrative  
+- all moving together  
 
 …is not diversification.
 
 True diversification considers:
-- sector exposure
-- correlation during market stress
+- sector exposure  
+- correlation during market stress  
 - dependency on BTC direction
 
 ---
@@ -140,14 +140,14 @@ True diversification considers:
 ## Risk Management vs Market Timing
 
 Risk management does **not** require:
-- calling tops
-- predicting bottoms
-- trading constantly
+- calling tops  
+- predicting bottoms  
+- trading constantly  
 
 It’s about:
-- structure
-- rules
-- discipline
+- structure  
+- rules  
+- discipline  
 
 Timing is optional. Risk control is mandatory.
 
@@ -158,13 +158,13 @@ Timing is optional. Risk control is mandatory.
 To manage risk, you must measure it.
 
 Key metrics:
-- maximum drawdown
-- exposure percentages
-- volatility over time
-- risk-adjusted returns
+- maximum drawdown  
+- exposure percentages  
+- volatility over time  
+- risk-adjusted returns  
 
 👉 This flows directly into performance analysis:  
-**[How to Track Crypto Portfolio Performance](https://txchyon.com/categories/portfolio-management/)**
+**[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**
 
 ---
 

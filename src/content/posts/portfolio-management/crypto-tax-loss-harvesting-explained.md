@@ -23,7 +23,7 @@ Key benefits:
 - Improve long-term portfolio efficiency  
 
 If you’re not sure how your allocation affects this, review:  
-👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/crypto-portfolio-allocation-for-beginners)**
+👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -60,7 +60,7 @@ It’s a **legal and strategic tool**, not a loophole.
 2. **Check Allocation & Exposure**
    - Don’t let harvesting break your portfolio balance  
    - Use insights from:  
-     **[How to Rebalance a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/how-to-rebalance-a-crypto-portfolio)**
+     **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 3. **Sell Underperforming Assets**
    - Trigger losses legally
@@ -99,13 +99,13 @@ Correct execution keeps your **strategy intact while reducing taxes**.
 ## How Harvesting Fits Into Overall Portfolio Management
 
 - Links back to **allocation**: make sure your asset distribution is intact  
-  👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/crypto-portfolio-allocation-for-beginners)**  
+  👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**  
 - Links back to **rebalancing**: reallocate after harvesting  
-  👉 **[How to Rebalance a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/how-to-rebalance-a-crypto-portfolio)**  
+  👉 **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**  
 - Links back to **risk management**: ensure you’re not overexposed after selling losses  
-  👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/categories/portfolio-management/crypto-portfolio-risk-management-explained)**  
+  👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**  
 - Links back to **performance tracking**: measure net portfolio performance after harvesting  
-  👉 **[How to Track Crypto Portfolio Performance](https://txchyon.com/categories/portfolio-management/how-to-track-crypto-portfolio-performance)**
+  👉 **[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**
 
 ---
 

@@ -24,7 +24,7 @@ You can have a perfectly allocated and rebalanced portfolio, but **if you don't 
 Tracking performance gives insight into both **returns** and **risk management**.
 
 If you’re new, start with allocation:  
-👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/crypto-portfolio-allocation-for-beginners)**
+👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 ---
 
@@ -33,32 +33,28 @@ If you’re new, start with allocation:
 ### 1️⃣ Total Portfolio Value Over Time
 - Absolute dollar growth  
 - Helps spot drawdowns  
-- Foundation for:  
-👉 **[Understanding Crypto Drawdowns and Volatility](https://txchyon.com/categories/portfolio-management/understanding-crypto-drawdowns-and-volatility)**
 
 ### 2️⃣ Allocation Drift
 - How far each asset has moved from its target  
 - Helps decide **when to rebalance**  
 - Learn more:  
-👉 **[How to Rebalance a Crypto Portfolio](https://txchyon.com/categories/portfolio-management/how-to-rebalance-a-crypto-portfolio)**
+👉 **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**
 
 ### 3️⃣ Realized vs Unrealized Gains
 - Track what you have sold vs what you still hold  
 - Important for **tax planning**  
 - Related concept:  
-👉 **[Rebalancing Using Threshold Bands](https://txchyon.com/categories/portfolio-management/rebalancing-using-threshold-bands)**
+👉 **[Crypto Tax-Loss Harvesting Explained](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
 
 ### 4️⃣ Risk-Adjusted Returns
 - Sharpe ratio, Sortino ratio  
 - Evaluates returns relative to volatility  
 - Ties directly into:  
-👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/categories/portfolio-management/crypto-portfolio-risk-management-explained)**
+👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ### 5️⃣ Performance Attribution
 - Know which assets contributed most to returns  
 - Avoid bias toward recent winners  
-- Pairs well with:  
-👉 **[Time-Based Portfolio Rebalancing](https://txchyon.com/categories/portfolio-management/time-based-portfolio-rebalancing)**
 
 ---
 
@@ -80,7 +76,7 @@ If you’re new, start with allocation:
 
 2. **Set Target Allocation**  
    Compare current weights vs allocation to track drift  
-   👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/categories/portfolio-management/crypto-portfolio-allocation-for-beginners)**
+   👉 **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners/)**
 
 3. **Calculate Metrics**  
    Track total value, realized/unrealized gains, volatility.
@@ -112,8 +108,9 @@ Fixing these ensures **accurate decision-making**.
 - Volatility tracking → informs position sizing  
 
 Together with:  
-👉 **[Periodic Portfolio Rebalancing](https://txchyon.com/categories/portfolio-management/periodic-portfolio-rebalancing)**  
-👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/categories/portfolio-management/crypto-portfolio-risk-management-explained)**  
+👉 **[How to Rebalance a Crypto Portfolio](https://txchyon.com/blog/portfolio-management/how-to-rebalance-a-crypto-portfolio/)**  
+👉 **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**  
+👉 **[Crypto Tax-Loss Harvesting Explained](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**  
 
 This turns portfolio management into a **system**, not guesswork.
 
