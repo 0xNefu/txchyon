@@ -3,7 +3,7 @@ title: "Portfolio Allocation for Multi-Chain Crypto Investors"
 description: "Learn how to allocate your crypto portfolio across multiple blockchains effectively, balancing risk, returns, and cross-chain exposure."
 date: 2025-12-25
 updatedDate: 2025-12-25
-image: "/images/posts/multi-chain-allocation.jpg"
+image: "/images/posts/allocation4.jpg"
 heroImageAlt: "Multi-chain crypto portfolio allocation chart showing different blockchain assets"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"

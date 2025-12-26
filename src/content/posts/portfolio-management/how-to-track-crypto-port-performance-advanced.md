@@ -3,14 +3,14 @@ title: "How to Track Crypto Portfolio Performance Advanced (Benchmarks, Returns 
 description: "A complete guide to tracking crypto portfolio performance using benchmarks, realized vs unrealized gains, risk-adjusted returns, attribution, and return calculations that reflect real investor outcomes."
 date: 2025-12-26
 updatedDate: 2025-12-26
-image: "/images/posts/crypto-portfolio-performance-tracking.jpg"
+image: "/images/posts/trackingcryptoadvanced.jpg"
 heroImageAlt: "Crypto portfolio dashboard showing benchmarks, returns, and performance metrics"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"
 tags: ["Crypto Portfolio", "Performance Tracking", "Benchmarking", "Returns", "Risk Management", "Allocation"]
 category: "portfolio-management"
 subcategory: "performance-tracking"
-draft: true
+draft: false
 ---
 
 ## Why Most Crypto Investors Misread Their Own Performance

@@ -31,7 +31,7 @@ const { searchList = [] } = Astro.props;
 
 <!-- Initialize search data -->
 <script is:inline>
-  window.searchIndex = {JSON.stringify(searchList)};
+  window.searchIndex = JSON.stringify(searchList);
   console.log("Search index loaded with", window.searchIndex?.length || 0, "items");
 </script>
 

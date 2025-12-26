@@ -3,7 +3,7 @@ title: "Tactical Crypto Portfolio Adjustments for Opportunistic Investors"
 description: "Learn how to make tactical adjustments to your crypto portfolio based on short-term market signals while maintaining long-term strategy."
 date: 2025-12-25
 updatedDate: 2025-12-25
-image: "/images/posts/tactical-portfolio-adjustments.jpg"
+image: "/images/posts/tactical.jpg"
 heroImageAlt: "Crypto portfolio with tactical allocation adjustments highlighted"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"

@@ -25,7 +25,8 @@ Instead of letting fear drive him, Joe follows his rebalancing plan: he trims Bi
 
 Lesson: **rebalancing fixes drift without emotion** and keeps the plan in control, not your feelings.
 
-> Allocation sets the plan. Rebalancing enforces it.
+> Allocation sets the plan. Rebalancing enforces it.  
+> Learn more about allocation: **[Crypto Portfolio Allocation for Beginners (Simple, Low-Risk Framework)](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)**
 
 ---
 
@@ -46,6 +47,8 @@ Rebalancing helps you:
 - Stay aligned with long-term strategy  
 
 Think of it like **keeping your crypto garden trimmed**: you cut the overgrown plants (overweight assets) and water the neglected ones (underweight assets).
+
+Related guides: **[How to Track Crypto Portfolio Performance](https://txchyon.com/blog/portfolio-management/how-to-track-crypto-portfolio-performance/)**, **[Dynamic Allocation Strategies for Active Traders](https://txchyon.com/blog/portfolio-management/dynamic-allocation-strategies-for-active-traders/)**
 
 ---
 
@@ -74,26 +77,28 @@ Joe liked this approach. Only meaningful moves triggered trades, saving him from
 
 Joe found this method gave him the perfect balance between discipline and efficiency — he stayed aligned with his goals without obsessing over every market move.
 
+> Step-by-step guide to rebalancing tools: **[Automated Rebalancing Tools and Strategies](https://txchyon.com/blog/portfolio-management/automated-rebalancing-tools-and-strategies/)**
+
 ---
 
 ## Step-by-Step: How to Rebalance a Crypto Portfolio
 
 1. **Review Your Target Allocation**  
-   Know your intended percentages for each asset.
+   Know your intended percentages for each asset.  
+   See allocation basics: **[Crypto Portfolio Allocation for Beginners](https://txchyon.com/blog/portfolio-management/crypto-portfolio-allocation-for-beginners-simple-low-risk-framework/)**
 
 2. **Calculate Current Weights**  
-   Use a portfolio tracker or spreadsheet to see drift.
+   Use a portfolio tracker or spreadsheet to see drift.  
 
 3. **Identify Overweight Assets**  
-   Trim the assets that have grown beyond target.
+   Trim the assets that have grown beyond target.  
 
 4. **Add to Underweight Assets**  
-   Redistribute capital to restore balance.
+   Redistribute capital to restore balance.  
 
 5. **Execute Trades Carefully**  
-   Mind fees, slippage, and taxes.
-
-Joe kept a funny little log: every time he rebalanced, he noted which coin “was begging for mercy” because it had pumped too much — it made him laugh while reinforcing discipline.
+   Mind fees, slippage, and taxes.  
+   Related: **[Using Stop-Loss and Take-Profit in Crypto Portfolios](https://txchyon.com/blog/portfolio-management/using-stop-loss-and-take-profit-in-crypto-portfolios/)**
 
 ---
 
@@ -107,6 +112,8 @@ Joe kept a funny little log: every time he rebalanced, he noted which coin “wa
 
 Joe once tried “panic rebalancing” during a mini dip — he ended up selling low and buying high. Never again.  
 
+> For tax and compliance: **[Crypto Tax-Loss Harvesting Explained](https://txchyon.com/blog/portfolio-management/crypto-tax-loss-harvesting-explained/)**
+
 ---
 
 ## Rebalancing vs Risk Management
@@ -118,7 +125,7 @@ To protect against deep drawdowns, you’ll also need:
 - stablecoin buffers  
 - downside planning  
 
-Rebalancing is just one tool in your arsenal.
+Related reading: **[Crypto Portfolio Risk Management Explained](https://txchyon.com/blog/portfolio-management/crypto-portfolio-risk-management-explained/)**
 
 ---
 
@@ -154,4 +161,6 @@ It’s not about predicting markets — it’s about **maintaining control**.
 
 Once allocation and rebalancing are set, everything else becomes easier.  
 
-Joe’s lesson: *laugh at the market swings, stick to the plan, and let the rules work for you*.
+Joe’s lesson: *laugh at the market swings, stick to the plan, and let the rules work for you*.  
+
+> See full portfolio management hub for next steps: **[Txchyon Portfolio Management Series](https://txchyon.com/categories/portfolio-management/)**  

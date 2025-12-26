@@ -3,14 +3,14 @@ title: "Tax-Efficient Rebalancing Strategies for Crypto"
 description: "Learn how to rebalance your crypto portfolio while minimizing taxable events and maximizing tax-loss harvesting opportunities."
 date: 2025-12-25
 updatedDate: 2025-12-25
-image: "/images/posts/tax-efficient-rebalancing.jpg"
+image: "/images/posts/rebalancing.jpg"
 heroImageAlt: "Crypto portfolio rebalancing chart highlighting tax optimization"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"
 tags: ["Crypto Portfolio", "Tax-Efficient Rebalancing", "Tax-Loss Harvesting", "Allocation", "Risk Management"]
 category: "portfolio-management"
 subcategory: "rebalancing-methods"
-draft: true
+draft: false
 ---
 
 ## What Is Tax-Efficient Rebalancing?

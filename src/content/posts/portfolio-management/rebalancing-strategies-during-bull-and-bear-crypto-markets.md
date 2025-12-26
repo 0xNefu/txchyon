@@ -3,7 +3,7 @@ title: "Rebalancing Strategies During Bull & Bear Crypto Markets"
 description: "Learn how to adjust your crypto portfolio rebalancing approach depending on market cycles, capturing gains in bulls and protecting capital in bears."
 date: 2025-12-25
 updatedDate: 2025-12-25
-image: "/images/posts/bull-bear-rebalancing.jpg"
+image: "/images/posts/bullbear.jpg"
 heroImageAlt: "Crypto portfolio rebalancing chart for bull and bear market scenarios"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"

@@ -3,14 +3,14 @@ title: "The Advanced Guide to Tax-Loss Harvesting for Crypto Investors"
 description: "Learn how to use tax-loss harvesting in crypto to minimize taxes, maintain allocations, and optimize portfolio performance — from basics to advanced strategies."
 date: 2025-12-26
 updatedDate: 2025-12-26
-image: "/images/posts/crypto-tax-loss-harvesting.jpg"
+image: "/images/posts/taxloss.jpg"
 heroImageAlt: "Crypto portfolio showing tax-loss harvesting strategies and realized losses"
 authors: ["Nefu"]
 authorTwitter: "@txchyon"
 tags: ["Crypto Portfolio", "Tax-Loss Harvesting", "Tax Optimization", "Rebalancing", "Risk Management", "Multi-Chain"]
 category: "portfolio-management"
 subcategory: "tax-loss-harvesting"
-draft: true
+draft: false
 ---
 
 ## Why Crypto Investors Often Miss Tax-Loss Opportunities
