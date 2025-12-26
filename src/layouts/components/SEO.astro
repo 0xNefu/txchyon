@@ -1,4 +1,4 @@
----
+﻿---
 import config from "@/config/config.json";
 
 const {
@@ -15,7 +15,7 @@ const {
 
 // Simple, direct image URL - NO DOUBLE BASE_URL!
 const finalTitle = title ?? "Txchyon - On-Chain Research & DeFi Alpha";
-const finalDescription = description ?? "on-chain research + Defi alpha and Airdrops";
+const finalDescription = description && description !== "true" ? description : "on-chain research + Defi alpha and Airdrops";
 // Use provided image OR fall back to default
 const finalImage = image ? image : "https://txchyon.com/images/tokens.jpg";
 
