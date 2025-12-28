@@ -15,8 +15,7 @@ tags:
   - Crypto Rewards
 category: "airdrop-farming"
 subcategory: "points-systems"
-draft: true
-slug: "/airdrop-farming/optimizing-airdrop-points"
+draft: false
 ---
 
 ## Introduction

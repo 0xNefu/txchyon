@@ -15,8 +15,7 @@ tags:
   - Sybil Detection
 category: "airdrop-farming"
 subcategory: "points-systems"
-draft: true
-slug: "/airdrop-farming/time-vs-volume-points-systems"
+draft: false
 ---
 
 ## Introduction

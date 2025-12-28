@@ -15,8 +15,7 @@ tags:
   - Crypto Security
 category: "airdrop-farming"
 subcategory: "points-systems"
-draft: true
-slug: "/airdrop-farming/how-projects-detect-sybil-wallets"
+draft: false
 ---
 
 ## Introduction

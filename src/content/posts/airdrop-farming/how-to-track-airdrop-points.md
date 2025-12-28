@@ -15,8 +15,7 @@ tags:
   - Sybil Risk
 category: "airdrop-farming"
 subcategory: "points-systems"
-draft: true
-slug: "/airdrop-farming/how-to-track-airdrop-points"
+draft: false
 ---
 
 ## Introduction
