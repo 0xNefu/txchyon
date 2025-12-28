@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Trust Wallet: Step-by-Step Tutorial for Beginners 2026"
+title: "How to Set Up Trust Wallet: Step-by-Step Tutorial for Beginners"
 description: "Learn how to safely install and configure Trust Wallet, the popular mobile non-custodial wallet supporting thousands of blockchains, tokens, DeFi, NFTs, and staking for beginners."
 date: 2025-12-29
 updatedDate: 2025-12-29

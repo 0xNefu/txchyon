@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Xverse Wallet: Step-by-Step Tutorial for Beginners 2026"
+title: "How to Set Up Xverse Wallet: Step-by-Step Tutorial for Beginners"
 description: "Learn how to safely install and set up Xverse, the leading Bitcoin wallet for Ordinals, Runes, Stacks, and Bitcoin DeFi. Perfect for beginners entering the Bitcoin Web3 ecosystem."
 date: 2025-12-26
 updatedDate: 2025-12-26

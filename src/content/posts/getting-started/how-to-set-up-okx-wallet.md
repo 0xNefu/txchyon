@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up OKX Wallet: Step-by-Step Tutorial for Beginners 2026"
+title: "How to Set Up OKX Wallet: Step-by-Step Tutorial for Beginners"
 description: "Discover how to safely install and configure OKX Wallet, the powerful non-custodial multi-chain wallet supporting over 100 blockchains, DeFi, NFTs, and seamless swaps for beginners."
 date: 2025-12-24
 updatedDate: 2025-12-24

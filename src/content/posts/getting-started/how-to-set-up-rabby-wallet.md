@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Rabby Wallet: Step-by-Step Tutorial for Beginners 2026"
+title: "How to Set Up Rabby Wallet: Step-by-Step Tutorial for Beginners"
 description: "Learn how to safely install and configure Rabby Wallet, the advanced EVM-compatible browser extension wallet designed for security, DeFi, and seamless multi-chain experience in 2026."
 date: 2025-12-25
 updatedDate: 2025-12-25

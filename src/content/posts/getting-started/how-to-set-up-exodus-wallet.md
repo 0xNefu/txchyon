@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Exodus Wallet: Step-by-Step Tutorial for Beginners 2026"
+title: "How to Set Up Exodus Wallet: Step-by-Step Tutorial for Beginners"
 description: "Learn how to safely install and configure Exodus Wallet, the popular multi-asset desktop and mobile non-custodial wallet supporting Bitcoin, Ethereum, Solana, and thousands of tokens for beginners."
 date: 2025-12-23
 updatedDate: 2025-12-23
