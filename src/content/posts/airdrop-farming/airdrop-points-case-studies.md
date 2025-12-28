@@ -235,6 +235,3 @@ The best farmers:
 > Next up: [What Actions Actually Earn Airdrop Points (And What Doesn’t)](/airdrop-farming/what-actions-earn-airdrop-points)
 
 ---
-
-## Leonardo.ai OG Hero Image Prompt
-
