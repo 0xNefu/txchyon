@@ -29,46 +29,39 @@ export interface Props {
 
 const { title, meta_title, description, image, noindex, canonical } = Astro.props;
 
-// === IMPROVED: HTML escape function that handles already-encoded entities ===
 const escapeHtml = (text) => {
   if (!text) return '';
   
-  // First, decode any existing HTML entities to avoid double-encoding
   let processed = text.toString()
-    .replace(/&amp;/g, '&')   // Decode &amp; to &
-    .replace(/&lt;/g, '<')    // Decode &lt; to <
-    .replace(/&gt;/g, '>')    // Decode &gt; to >
-    .replace(/&quot;/g, '"')  // Decode &quot; to "
-    .replace(/&#039;/g, "'")  // Decode &#039; to '
-    .replace(/&nbsp;/g, ' '); // Decode &nbsp; to space
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&nbsp;/g, ' ');
   
-  // Then properly encode everything for HTML attributes
   return processed
-    .replace(/&/g, '&amp;')   // Encode & to &amp;
-    .replace(/</g, '&lt;')    // Encode < to &lt;
-    .replace(/>/g, '&gt;')    // Encode > to &gt;
-    .replace(/"/g, '&quot;')  // Encode " to &quot;
-    .replace(/'/g, '&#039;')  // Encode ' to &#039;
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
     .trim();
 };
 
-// Use escapeHtml for meta tags
 const finalTitle = escapeHtml(meta_title ?? title ?? config.site.title);
 const finalDescription = escapeHtml(description ?? config.metadata.meta_description);
 
-// Handle image prop safely
 const finalImage = image && typeof image === 'string' && image.trim()
   ? `${config.site.base_url}${image.startsWith("/") ? "" : "/"}${image}`
   : `${config.site.base_url}${config.metadata.meta_image}`;
 
-// FIXED: Normalize canonical URL - remove trailing slash and query parameters
-const cleanPath = Astro.url.pathname.replace(/\/$/, ""); // Remove trailing slash
+const cleanPath = Astro.url.pathname.replace(/\/$/, "");
 const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
 ---
 <!doctype html>
 <html lang="en">
   <head>
-    {/* GOOGLE ANALYTICS GA4 - LIVE */}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W77T47Y58P"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -77,17 +70,12 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
       gtag('config', 'G-W77T47Y58P');
     </script>
 
-    {/* Ahrefs Web Analytics */}
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="BM9NrhHESqRca7xP0Vuqeg" async></script>
-
-    {/* Google Search Console verification placeholder */}
-    {/* <meta name="google-site-verification" content="your-code-here" /> */}
 
     <link rel="shortcut icon" href={config.site.favicon} />
     <meta name="theme-name" content="bookworm-light-astro" />
     <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
+    <meta name="theme-color" content="#ffffff" />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -107,7 +95,6 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
-    <!-- ========== USE SEO COMPONENT INSTEAD OF DUPLICATE TAGS ========== -->
     <SEO
       title={finalTitle}
       description={finalDescription}
@@ -116,7 +103,6 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
       noindex={!!noindex}
       type="website"
     />
-    <!-- ========== END SEO COMPONENT ========== -->
 
     <link rel="alternate" type="application/rss+xml" title="Txchyon RSS" href="/rss.xml" />
     <link rel="alternate" type="application/feed+json" title="Txchyon JSON Feed" href="/feed.json" />
@@ -124,14 +110,33 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     <ClientRouter />
     <meta name="author" content={config.metadata.meta_author} />
     
-    <!-- Critical theme CSS -->
+    <!-- SIMPLE, RELIABLE THEME SCRIPT -->
+    <script>
+      // Check for saved theme or use system preference
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Apply theme immediately to prevent flash
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.setAttribute('data-theme', 'dark');
+          // Update theme-color meta tag
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#000000');
+        } else {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
+        }
+        
+        // Save default theme if not set
+        if (!savedTheme) {
+          localStorage.setItem('theme', prefersDark ? 'dark' : 'light');
+        }
+      })();
+    </script>
+    
     <style>
-      /* Initialize with dark mode by default to prevent flash */
-      :root {
-        color-scheme: light dark;
-      }
-      
-      /* Smooth transitions */
       * {
         transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
       }
@@ -149,137 +154,60 @@ const finalCanonical = canonical ?? `${config.site.base_url}${cleanPath}`;
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <FloatingBubble client:load />
   
-    <!-- FIXED THEME PERSISTENCE SCRIPT -->
-    <script is:global>
-      // ============================================
-      // FIXED: Theme Persistence Script
-      // ============================================
-      
-      // Initialize theme immediately (no FOUC)
-      (function() {
-        const THEME_KEY = 'txchyon-theme';
+    <!-- Theme toggle functionality -->
+    <script>
+      // Toggle function
+      function toggleDarkMode() {
         const html = document.documentElement;
+        const isDark = html.classList.contains('dark');
+        const newTheme = isDark ? 'light' : 'dark';
         
-        // Function to get saved theme
-        function getSavedTheme() {
-          try {
-            const saved = localStorage.getItem(THEME_KEY);
-            if (saved === 'dark' || saved === 'light') {
-              return saved;
-            }
-          } catch (e) {
-            // localStorage not available
-          }
-          
-          // Check system preference
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          return prefersDark ? 'dark' : 'light';
+        if (newTheme === 'dark') {
+          html.classList.add('dark');
+          html.setAttribute('data-theme', 'dark');
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#000000');
+        } else {
+          html.classList.remove('dark');
+          html.setAttribute('data-theme', 'light');
+          document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#ffffff');
         }
         
-        // Function to apply theme
-        function applyTheme(theme) {
-          if (theme === 'dark') {
-            html.classList.add('dark');
-          } else {
-            html.classList.remove('dark');
-          }
-          html.setAttribute('data-theme', theme);
-          
-          // Update meta theme-color
-          const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-          if (metaThemeColor) {
-            metaThemeColor.setAttribute('content', theme === 'dark' ? '#000000' : '#ffffff');
-          }
-        }
+        localStorage.setItem('theme', newTheme);
         
-        // Function to save theme
-        function saveTheme(theme) {
-          try {
-            localStorage.setItem(THEME_KEY, theme);
-          } catch (e) {
-            // localStorage not available
-          }
-        }
-        
-        // Initialize theme on page load
-        const savedTheme = getSavedTheme();
-        applyTheme(savedTheme);
-        saveTheme(savedTheme); // Save if not already saved
-        
-        // Global toggle function
-        window.toggleDarkMode = function() {
-          const currentTheme = html.classList.contains('dark') ? 'dark' : 'light';
-          const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-          
-          applyTheme(newTheme);
-          saveTheme(newTheme);
-          
-          // Dispatch custom event for any listeners
-          window.dispatchEvent(new CustomEvent('themechange', { 
-            detail: { theme: newTheme } 
-          }));
-        };
-        
-        // Listen for system preference changes (only if user hasn't made a choice)
-        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        mediaQuery.addEventListener('change', (e) => {
-          const saved = localStorage.getItem(THEME_KEY);
-          if (!saved) {
-            const newTheme = e.matches ? 'dark' : 'light';
-            applyTheme(newTheme);
-            saveTheme(newTheme);
-          }
-        });
-        
-        // Mark theme as initialized
-        html.classList.add('theme-initialized');
-      })();
+        // Update theme icons
+        updateThemeIcons();
+      }
       
-      // ============================================
-      // Attach click handlers
-      // ============================================
+      // Update theme icons
+      function updateThemeIcons() {
+        const sunIcon = document.getElementById('theme-icon-sun');
+        const moonIcon = document.getElementById('theme-icon-moon');
+        const isDark = document.documentElement.classList.contains('dark');
+        
+        if (sunIcon) sunIcon.classList.toggle('hidden', isDark);
+        if (moonIcon) moonIcon.classList.toggle('hidden', !isDark);
+      }
+      
+      // Attach click handler
       document.addEventListener('DOMContentLoaded', () => {
-        // Attach click handler to theme toggle button
         const toggleBtn = document.getElementById('theme-toggle');
         if (toggleBtn) {
-          // Remove any existing listeners
-          const newToggleBtn = toggleBtn.cloneNode(true);
-          toggleBtn.parentNode.replaceChild(newToggleBtn, toggleBtn);
-          
-          // Add click listener
-          document.getElementById('theme-toggle').addEventListener('click', window.toggleDarkMode);
+          toggleBtn.addEventListener('click', toggleDarkMode);
         }
         
-        // Update theme toggle icon
-        function updateThemeIcon() {
-          const icon = document.getElementById('theme-icon');
-          if (icon) {
-            const isDark = document.documentElement.classList.contains('dark');
-            icon.textContent = isDark ? '🌙' : '☀️';
-          }
-        }
-        
-        // Update icon on load
-        updateThemeIcon();
-        
-        // Update icon on theme change
-        window.addEventListener('themechange', updateThemeIcon);
+        // Initialize icons
+        updateThemeIcons();
       });
       
-      // Re-attach listener on page navigation (for Astro View Transitions)
+      // Re-attach on page navigation
       document.addEventListener('astro:page-load', () => {
-        // Re-attach theme toggle button listener
         const toggleBtn = document.getElementById('theme-toggle');
         if (toggleBtn) {
-          toggleBtn.addEventListener('click', window.toggleDarkMode);
+          toggleBtn.addEventListener('click', toggleDarkMode);
         }
         
-        // Update theme icon
-        const icon = document.getElementById('theme-icon');
-        if (icon) {
-          const isDark = document.documentElement.classList.contains('dark');
-          icon.textContent = isDark ? '🌙' : '☀️';
-        }
+        // Update icons
+        updateThemeIcons();
       });
     </script>
   </body>
