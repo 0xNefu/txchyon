@@ -9,7 +9,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "format": "prettier -w .",
-    "check": "astro check"
+    "check": "astro check",
+    "check:links": "node scripts/check-links.js",
+    "check:links:preview": "astro preview & sleep 5 && node scripts/check-links.js http://localhost:4321",
+    "check:links:build": "astro build && astro preview & sleep 5 && node scripts/check-links.js http://localhost:4321"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -42,6 +45,7 @@
     "@tailwindcss/vite": "^4.1.14",
     "@types/react": "^19.2.2",
     "@types/react-dom": "19.2.1",
+    "broken-link-checker": "^0.7.8",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",

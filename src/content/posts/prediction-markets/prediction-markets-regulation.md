@@ -1,16 +1,16 @@
 ---
 title: "Prediction Markets Regulation: What’s Legal for Traders in the US, EU, and Global Crypto Platforms"
 description: "Current regulatory status of Kalshi, Polymarket, Worm.wtf, and others. Where you can trade legally and what risks remain."
-date: 2025-12-22
-updatedDate: 2025-12-22
-image: "/images/posts/prediction-markets-regulation.jpg"
+date: 2025-12-31
+updatedDate: 2025-12-31
+image: "/images/posts/pmregulation.jpg"
 heroImageAlt: "Gavel over prediction market interface"
 authors: ["Nefu"]
 authorTwitter: "txchyon"
 tags: ["prediction-markets", "regulation", "legal"]
 category: "prediction-markets"
 subcategory: "regulatory-updates"
-draft: true
+draft: false
 ---
 
 # Prediction Markets Regulation: What’s Legal for Traders in the US, EU, and Global Crypto Platforms
@@ -57,4 +57,4 @@ More regulated entrants likely. Crypto platforms may seek licenses or stay offsh
 
 The space grows fastest where regulation clarifies rather than bans.
 
-See platform specifics in our guides to [What Is Kalshi?](/blog/prediction-markets/what-is-kalshi/), [What Is Polymarket?](/blog/prediction-markets/what-is-polymarket/), and others. Latest updates in [Prediction Markets](/blog/prediction-markets/).
+See platform specifics in our guides to [What Is Kalshi?](/blog/prediction-markets/what-is-kalshi/), [What Is Polymarket?](/blog/prediction-markets/what-is-polymarket/), and others. Latest updates in [Prediction Markets](/categories/prediction-markets/).

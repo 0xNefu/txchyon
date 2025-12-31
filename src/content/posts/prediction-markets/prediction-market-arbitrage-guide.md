@@ -1,16 +1,16 @@
 ---
 title: "Prediction Market Arbitrage Guide: How to Find & Execute Risk-Free Profits Across Platforms"
 description: "Spot and execute arbitrage between Polymarket, Kalshi, Worm.wtf, and others. Tools, live examples, and bots that still work."
-date: 2025-12-22
-updatedDate: 2025-12-22
-image: "/images/posts/prediction-market-arbitrage.jpg"
+date: 2025-12-31
+updatedDate: 2025-12-31
+image: "/images/posts/pmarbitrage.jpg"
 heroImageAlt: "Multiple prediction market screens showing price differences"
 authors: ["Nefu"]
 authorTwitter: "txchyon"
 tags: ["prediction-markets", "arbitrage", "trading"]
 category: "prediction-markets"
 subcategory: "arbitrage-opportunities"
-draft: true
+draft: false
 ---
 
 # Prediction Market Arbitrage Guide: How to Find & Execute Risk-Free Profits Across Platforms
@@ -62,4 +62,4 @@ US elections aftermath, major sports championships, Bitcoin price milestones, aw
 
 Pure arb edges shrink fast as the space matures, but they never fully disappear. Humans remain inefficient.
 
-Link up with our platform breakdowns in [What Is Kalshi?](/blog/prediction-markets/what-is-kalshi/) and [What Is Polymarket?](/blog/prediction-markets/what-is-polymarket/). Full arsenal in [Prediction Markets](/blog/prediction-markets/).
+Link up with our platform breakdowns in [What Is Kalshi?](/blog/prediction-markets/what-is-kalshi/) and [What Is Polymarket?](/blog/prediction-markets/what-is-polymarket/). Full arsenal in [Prediction Markets](/categories/prediction-markets/).

@@ -1,16 +1,16 @@
 ---
 title: "Prediction Market Bankroll Management: How to Size Positions & Avoid Going Broke"
 description: "Adapted Kelly Criterion, position sizing rules, leverage risks on Worm.wtf, and real case studies from top traders."
-date: 2025-12-22
-updatedDate: 2025-12-22
-image: "/images/posts/bankroll-management-prediction-markets.jpg"
+date: 2025-12-31
+updatedDate: 2025-12-31
+image: "/images/posts/pmbankroll.jpg"
 heroImageAlt: "Bankroll growth chart with risk controls"
 authors: ["Nefu"]
 authorTwitter: "txchyon"
 tags: ["prediction-markets", "risk-management", "trading"]
 category: "prediction-markets"
 subcategory: "bankroll-management"
-draft: true
+draft: false
 ---
 
 # Prediction Market Bankroll Management: How to Size Positions & Avoid Going Broke
@@ -62,4 +62,4 @@ Track every trade: entry odds, size, reasoning, outcome. Review monthly. Cut siz
 
 Bankroll management is boring until it saves your stack. Then it feels genius.
 
-Master the platforms first in our guides like [What Is Worm.wtf?](/blog/prediction-markets/what-is-worm-wtf/). Full [Prediction Markets](/blog/prediction-markets/) category for edges worth protecting.
+Master the platforms first in our guides like [What Is Worm.wtf?](/blog/prediction-markets/what-is-worm-wtf/). Full [Prediction Markets](/categories/prediction-markets/) category for edges worth protecting.
