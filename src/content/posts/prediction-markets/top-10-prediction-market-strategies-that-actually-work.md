@@ -67,7 +67,7 @@ Worm.wtf offers leverage that competitors often lack. Use it sparingly and only 
 
 ## 8. Parlay Crushing on Kalshi
 
-Kalshi allows sports parlays that crypto platforms cannot match. Treat them like correlated bets: combine heavy favorites with slight underdogs where implied probabilities multiply favorably. Avoid lottery-style long shots promoted by the app; they’re entertainment, not edge.
+Kalshi allows sports parlays that crypto platforms cannot match. Treat them like correlated bets: combine heavy favorites with slight underdogs where implied probabilities multiply favorably. Avoid lottery-style long shots promoted by the app; they’re entertainment, not edge. Check out our guide on passive income with kalshi [How to Earn Passive Income on Kalshi](/blog/prediction-markets/how-to-earn-passive-income-on-kalshi-liquidity-incentive-program)
 
 ---
 
