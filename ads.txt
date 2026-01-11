@@ -1,0 +1,2 @@
+# ads.txt for txchyon.com
+google.com, pub-6121972957488905, DIRECT, f08c47fec0942fa0

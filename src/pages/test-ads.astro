@@ -1,0 +1,49 @@
+---
+// src/pages/test-ads.astro
+import GoogleAd from "@/components/ads/GoogleAd.astro";
+import ReadingModeToggle from "@/components/ReadingModeToggle.astro";
+---
+
+<html>
+<head>
+  <title>Test Ads & Reading Mode</title>
+  <style>
+    body { padding: 20px; font-family: sans-serif; }
+    .test-box { 
+      background: #f0f0f0; 
+      padding: 20px; 
+      margin: 20px 0; 
+      border-radius: 8px; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Testing Ads & Reading Mode</h1>
+  
+  <div class="test-box">
+    <h2>Test Ad Component:</h2>
+    <GoogleAd position="top" />
+  </div>
+  
+  <div class="test-box">
+    <h2>Test Reading Mode Toggle:</h2>
+    <ReadingModeToggle />
+  </div>
+  
+  <div class="test-box">
+    <h2>Manual Test:</h2>
+    <button onclick="document.body.classList.toggle('reading-mode')">
+      Toggle Reading Mode Manually
+    </button>
+    <p>Click the button above. If "reading-mode" class is added to body, CSS should hide ads.</p>
+  </div>
+  
+  <script>
+    // Check if reading mode button exists
+    console.log('Reading mode button:', document.querySelector('.reading-mode-btn'));
+    
+    // Check localStorage
+    console.log('Reading mode saved:', localStorage.getItem('txchyon-reading-mode'));
+  </script>
+</body>
+</html>
